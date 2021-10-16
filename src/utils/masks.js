@@ -7,6 +7,14 @@ function cpfMask (value) {
     .replace(/(-\d{2})\d+?$/, '$1')
 }
 
+function dataMask (value) {
+  return value
+    .replace(/\D/g, '')
+    .replace(/(\d{2})(\d)/, '$1/$2')
+    .replace(/(\d{2})(\d)/, '$1/$2')
+    .replace(/(\/\d{4})\d+?$/, '$1')
+}
+
 function cnpjMask (value) {
   return value
     .replace(/\D/g, '')
@@ -16,8 +24,6 @@ function cnpjMask (value) {
     .replace(/(\d{4})(\d)/, '$1-$2')
     .replace(/(-\d{2})\d+?$/, '$1')
 }
-
-export { }
 
 function phoneMask (value) {
   return value
@@ -44,10 +50,11 @@ function pisMask (value) {
     .replace(/(-\d{1})\d+?$/, '$1')
 }
 
-export { 
-  cpfMask, 
-  cnpjMask, 
-  phoneMask, 
-  cepMask, 
-  pisMask
+export {
+  cpfMask,
+  cnpjMask,
+  phoneMask,
+  cepMask,
+  pisMask,
+  dataMask,
 }
