@@ -25,6 +25,7 @@ function App() {
         <Input
           type='text'
           name='cpf'
+          id='cpf'
           value={cpfMask(cpf)}
           onChange={(e) => setCPF(e.target.value)}
         />
@@ -32,6 +33,7 @@ function App() {
         <Input
           type='text'
           name='cnpj'
+          id='cnpj'
           value={cnpjMask(cnpj)}
           onChange={(e) => setCNPJ(e.target.value)}
         />
@@ -39,12 +41,14 @@ function App() {
         <Input
           type='text'
           name='phone'
+          id='phone'
           value={phoneMask(phone)}
           onChange={(e) => setPhone(e.target.value)}
         />
         <Label htmlFor='zipcode'>CEP: 00000-000</Label>
         <Input
           type='text'
+          id='zipcode'
           name='zipcode'
           value={cepMask(zipcode)}
           onChange={(e) => setZipcode(e.target.value)}
@@ -53,6 +57,7 @@ function App() {
         <Input
           type='text'
           name='pis'
+          id='pis'
           value={pisMask(pis)}
           onChange={(e) => setPis(e.target.value)}
         />
@@ -60,6 +65,7 @@ function App() {
         <Input
           type='text'
           name='data'
+          id='data'
           value={dataMask(data)}
           onChange={(e) => setData(e.target.value)}
         />
