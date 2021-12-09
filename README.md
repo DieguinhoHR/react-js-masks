@@ -1,3 +1,11 @@
+# Reactjs Masks
+
+Máscaras para formulário em React.js sem utilização de libs adicionais.
+
+Esse repositório contêm exemplo de inputs de textos com máscaras para: CPF, CNPJ, Telefone, PIS, CEP e Data.
+
+Para adicional explicações, veja [esse video](https://youtu.be/r-8isv_TnVA?list=TLPQMTYxMDIwMjFP9hVSVfWBpw). 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
